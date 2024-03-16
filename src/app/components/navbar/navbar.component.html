@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-lg bg-light shadow bg-body-tertiary">
+    <div class="container">
+    <a class="navbar-brand" [routerLink]="['/home']">To Do Manager</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-uppercase">
+        <li class="nav-item">
+          <a class="nav-link active" [routerLink]="['/home']" aria-current="page">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/add-todo']">Add Todo</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link " [routerLink]="['/todos']">View Todos</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link " [routerLink]="['/about']">About</a>
+          </li>
+      </ul>
+    
+    </div>
+</div>
+  </nav>
