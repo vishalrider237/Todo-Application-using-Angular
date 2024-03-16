@@ -1,5 +1,6 @@
 # ToDoManager
 Live deployed App ,click here to check- https://todo-application-using-angular.vercel.app/home
+<br>
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.10.
 
 ## Development server
