@@ -29,12 +29,12 @@ const routes: Routes = [
     title:'View- Todos Manager'
   },
   {
-    path:'todo',
+    path:'todo/:todoId',
     component:ViewTodoComponent,
     title:'Todo Manager- Todo Manager'
   },
   {
-    path:'update-todo',
+    path:'update-todo/:todoId',
     component:UpdateTodoComponent,
     title:'Uppdate Todo- Todo Manager'
   },

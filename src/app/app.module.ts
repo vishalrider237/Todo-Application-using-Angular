@@ -15,6 +15,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { AboutComponent } from './pages/about/about.component';
 import { TodoListViewComponent } from './components/todo-list-view/todo-list-view.component';
 import { FormsModule } from '@angular/forms';
+import { StoreModule } from '@ngrx/store';
+import { todoReducer } from './store/todo.reducers';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule,FormsModule
+    NgbModule,FormsModule, StoreModule.forRoot({
+      'todo':todoReducer
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

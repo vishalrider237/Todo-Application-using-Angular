@@ -2,12 +2,14 @@
     <div class="row mt-4">
         <div class="col-md-8 offset-md-2">
             <h3 style="text-align:center;">List Of Todos</h3>
-            <app-todo-list-view></app-todo-list-view>
-            <app-todo-list-view></app-todo-list-view>
-            <app-todo-list-view></app-todo-list-view>
-            <app-todo-list-view></app-todo-list-view>
-            <app-todo-list-view></app-todo-list-view>
-            <app-todo-list-view></app-todo-list-view>
+            <div class="alert alert-danger text-center" *ngIf="todos.length<=0">
+                <h3>No Todos are there in the list</h3>
+                <p>Start Adding Todos</p>
+                
+                <button class="btn btn-primary" [routerLink]="['/add-todo']" >Add New Todo</button>
+            </div>
+            <app-todo-list-view *ngFor="let todo of todos" [singleTodo]="todo"></app-todo-list-view>
+            
         </div> 
     </div>
 </div>
